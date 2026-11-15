@@ -1,10 +1,20 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+# Snowflake credentials
+profiles.yml
+.env
+.env.*
+!.env.example
+*.pem
+*.p8
 
-# Virtual environments
-.venv
+# Python environment
+.venv/
+__pycache__/
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# Local configuration
+.vscode/
